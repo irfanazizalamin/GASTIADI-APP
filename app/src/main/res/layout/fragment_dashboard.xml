@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Dashboard Fragment" />
+        android:layout_height="wrap_content"/>
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/image1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Testing" />
-
-</FrameLayout>
+        android:layout_height="300dp"
+        android:background="@drawable/image_dashboard"
+        android:gravity="center"
+        android:orientation="vertical"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
