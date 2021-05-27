@@ -1,20 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <LinearLayout
+    <ImageView
         android:id="@+id/image1"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:background="@drawable/image_dashboard"
         android:gravity="center"
         android:orientation="vertical"/>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="351dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/image1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:text="Membantu Pelaporan Kekerasan Terhadap Perempuan dan Anak dalam Keadaan Mendesak"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="349dp"
+        android:layout_height="208dp"
+        android:layout_below="@id/judul"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:text="Sampaikan aspirasi dan pengaduan untuk perlindungan Anak dan Perempuan terhadap kekerasan. Tidak ada pembenaran untuk melakukan kekerasan. Jadilah pelapor yang memutus mata rantai kekerasan terhadap Anak dan Perempuan sekarang juga."
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
