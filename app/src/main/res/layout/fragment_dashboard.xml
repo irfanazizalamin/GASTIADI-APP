@@ -11,6 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+    </ViewFlipper>
+
     <ImageView
         android:id="@+id/image1"
         android:layout_width="match_parent"
@@ -45,6 +53,8 @@
         android:text="Sampaikan aspirasi dan pengaduan untuk perlindungan Anak dan Perempuan terhadap kekerasan. Tidak ada pembenaran untuk melakukan kekerasan. Jadilah pelapor yang memutus mata rantai kekerasan terhadap Anak dan Perempuan sekarang juga."
         android:textColor="@color/black"
         android:textSize="18dp" />
+
+
 
 
 </RelativeLayout>

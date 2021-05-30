@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 import com.dicoding.picodiploma.gastiadiapp.R;
 
@@ -16,6 +18,7 @@ import com.dicoding.picodiploma.gastiadiapp.R;
  * create an instance of this fragment.
  */
 public class DashboardFragment extends Fragment {
+    ViewFlipper viewFlipper;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -48,13 +51,21 @@ public class DashboardFragment extends Fragment {
         return fragment;
     }
 
+
+
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+
         }
+
+
     }
 
     @Override
@@ -63,4 +74,5 @@ public class DashboardFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dashboard, container, false);
     }
+
 }
