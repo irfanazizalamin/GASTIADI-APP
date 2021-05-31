@@ -62,8 +62,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="Full Name"
-        android:textColor="@color/colorWhite"
+        android:hint="Nama"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +73,7 @@
         app:layout_constraintVertical_bias="0.07999998" />
 
     <EditText
-        android:id="@+id/eEmail"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -84,7 +85,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="Email"
+        android:hint="Email"
+        android:textColorHint="@color/white"
         android:textColor="@color/colorWhite"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,27 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/eFullName"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/eNoHp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@color/colorPrimaryDark"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:text="Nomor Hp"
-        android:textColor="@color/colorWhite"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eEmail"
-        app:layout_constraintVertical_bias="0.0" />
+
 
     <EditText
         android:id="@+id/ePassword"
@@ -128,13 +110,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="Password"
+        android:hint="Password"
+        android:textColorHint="@color/white"
         android:textColor="@color/colorWhite"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eNoHp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
