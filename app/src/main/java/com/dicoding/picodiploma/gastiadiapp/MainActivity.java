@@ -2,12 +2,16 @@ package com.dicoding.picodiploma.gastiadiapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.dicoding.picodiploma.gastiadiapp.ui.chat.ChatFragment;
 import com.dicoding.picodiploma.gastiadiapp.ui.dashboard.DashboardFragment;
+import com.dicoding.picodiploma.gastiadiapp.ui.profile.Login;
 import com.dicoding.picodiploma.gastiadiapp.ui.profile.ProfileFragment;
+import com.google.firebase.auth.FirebaseAuth;
 import com.luseen.spacenavigation.SpaceItem;
 import com.luseen.spacenavigation.SpaceNavigationView;
 import com.luseen.spacenavigation.SpaceOnClickListener;
@@ -36,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.nav_host_fragment, new ChatFragment())
                         .commit();
+            }
+
+            public void logout (View view){
+                FirebaseAuth.getInstance().signOut();//logout
+                startActivity(new Intent(getApplicationContext(), Login.class));
+                finish();
             }
 
             @Override
