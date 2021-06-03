@@ -13,4 +13,5 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="grey">#FF808080</color>
 </resources>
