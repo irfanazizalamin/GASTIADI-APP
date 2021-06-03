@@ -26,6 +26,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -42,4 +45,11 @@ dependencies {
 
     // Navigation View
     implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+
+    // For Socket
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.github.utsavstha:adonis-websocket-client-android:1.1'
+
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
 }

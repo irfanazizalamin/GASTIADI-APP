@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.gastiadiapp;
+package com.dicoding.picodiploma.gastiadiapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.dicoding.picodiploma.gastiadiapp.R;
 import com.dicoding.picodiploma.gastiadiapp.ui.chat.ChatFragment;
 import com.dicoding.picodiploma.gastiadiapp.ui.dashboard.DashboardFragment;
 import com.dicoding.picodiploma.gastiadiapp.ui.profile.Login;

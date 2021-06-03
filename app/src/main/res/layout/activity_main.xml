@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <com.luseen.spacenavigation.SpaceNavigationView
         android:id="@+id/nav_view"
@@ -16,11 +16,11 @@
         android:layout_gravity="bottom"
         app:active_centre_button_icon_color="@color/white"
         app:inactive_centre_button_icon_color="@color/white"
-        app:active_item_color="@color/blue"
+        app:active_item_color="@color/purple_900"
         app:inactive_item_color="@color/white_with_alpha"
-        app:centre_button_color="@color/teal_700"
-        app:active_centre_button_background_color="@color/blue"
-        app:space_background_color="@color/teal_200"
+        app:centre_button_color="@color/purple_500"
+        app:active_centre_button_background_color="@color/purple_900"
+        app:space_background_color="@color/purple_200"
         app:centre_button_icon="@drawable/ic_chat"
         app:space_item_icon_size="@dimen/space_item_icon_only_size"
         app:space_item_icon_only_size="@dimen/space_item_icon_only_size" />
